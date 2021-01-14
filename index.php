@@ -10,7 +10,7 @@ $to = "ezekielnizamani@gmail.com";
 
 
 
-    $headers = "From: ezekielnizamani0@gmail.com";
+    $headers = "From: $from";
 
     if(mail($to,$message,$headers)){
         echo "Mail Sent";
