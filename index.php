@@ -1,3 +1,28 @@
+<?php
+$name = "";
+$from ="";
+$message = "";
+
+$to = "ezekielnizamani@gmail.com";
+
+if(isset($_POST['submit']))
+{
+    $name = "from" . $_POST['name'];
+    $from = $_POST['email'];
+    $message = $_POST['message'];
+
+
+
+    $headers = "From: " . $from;
+
+    if(mail($to,$name,$message,$headers)){
+        echo "Mail Sent";
+    }else{
+        echo "Email failed.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -216,21 +241,21 @@ I created my portfolio website to show my work and skills, this is built-in HTML
              </p>
              </div>
          </div>
-         <form  method="post" class="contact-form" action="https://forms.un-static.com/forms/2e9671af126f6a79aa23bea53f157c98d3b7dbad">
+         <form  method="post" class="contact-form" action="form-submited.html">
              <div class="form-group">
-                 <input type="text" required placeholder="Your name">
+                 <input type="text" name="name" required placeholder="Your name">
                    
                 </div>
                 <div class="form-group">
-                    <input type="email" required placeholder="Your email">
+                    <input type="email"  name="email" required placeholder="Your email">
                    
                 </div>
 
                 <div class="form-group">
-                    <textarea name="message" required id="message" cols="120" rows="10" placeholder="Message"></textarea>
+                    <textarea name="message" name="message" required id="message" cols="120" rows="10" placeholder="Message"></textarea>
                 
                 </div>
-                <input type="submit" value="Send Message">
+                <input type="submit"  name="submit" value="Send Message">
             </form>
          </section>
             <!-- contact section end -->
