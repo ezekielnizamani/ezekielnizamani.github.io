@@ -4,22 +4,22 @@ $from ="";
 $message = "";
 
 $to = "ezekielnizamani@gmail.com";
-
-if(isset($_POST['submit']))
-{
-    $name = "from" . $_POST['name'];
-    $from = $_POST['email'];
-    $message = $_POST['message'];
+  $name = "Ezekiel";
+    $from = "ezekielnizamani0@gmail.com";
+    $message = "Yahoo contact form connected";
 
 
 
-    $headers = "From: " . $from;
+    $headers = "From: ezekielnizamani0@gmail.com";
 
     if(mail($to,$name,$message,$headers)){
         echo "Mail Sent";
     }else{
         echo "Email failed.";
     }
+if(isset($_POST['submit']))
+{
+  
 }
 ?>
 
