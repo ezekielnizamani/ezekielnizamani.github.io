@@ -53,6 +53,7 @@
                         <div class="service-col"  >
                             <img src="assets/icons/setings.svg" alt="Setings gear icon">
                             <h3 class="service-col-heading">WEB DEVELOPMENT</h3>
+                      
                             <P class="service-col-test">
                             Customized, fully interactive Websites or Portfolios hand coded
                             </P>
@@ -124,7 +125,7 @@ Following are my current skills. More coming
 
          <section class="work" id="work">
              <div class="container">
-                 <div class="sections-header" data-aos="fade-up">
+                 <div class="sections-header">
                     <h2 class="sections-title">Portfolio </h2>
            
                 <p class="sections-subtitle">
@@ -137,7 +138,10 @@ Following are my current skills. More coming
                            <div class="work-col">
                              <div class="work--col_image">
                                  <img src="./assets/images/outdoors.PNG" alt="Portfolio project image">
-                                 <h2 class="project-name">Outdoors</h2>
+                                 <div class="work__live">
+                                       <a href="https://github.com/ezekielnizamani/ezekielnizamani.github.io" class="live">View live</a>
+                                 </div>
+                                       <h2 class="project-name">Outdoors</h2>
                              </div>
                              <div class="work--col_content">
                                <p>
@@ -202,7 +206,7 @@ I created my portfolio website to show my work and skills, this is built-in HTML
 
          <!-- contact section -->
          <section class="contact" id="contact">
-         <div class="sections-header" data-aos="fade-up">
+         <div class="sections-header">
              <div class="container " >
              <h2 class="sections-title">Get in touch</h2>
 
