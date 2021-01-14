@@ -12,7 +12,7 @@ $to = "ezekielnizamani@gmail.com";
 
     $headers = "From: ezekielnizamani0@gmail.com";
 
-    if(mail($to,$name,$message,$headers)){
+    if(mail($to,$message,$headers)){
         echo "Mail Sent";
     }else{
         echo "Email failed.";
