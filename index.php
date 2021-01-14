@@ -8,11 +8,11 @@ $to = "ezekielnizamani@gmail.com";
     $from = "ezekielnizamani0@gmail.com";
     $message = "Yahoo contact form connected";
 
-
+$subject ="testing";
 
     $headers = "From: $from";
 
-    if(mail($to,$message,$headers)){
+    if(mail($to,$subject,$message,$headers)){
         echo "Mail Sent";
     }else{
         echo "Email failed.";
