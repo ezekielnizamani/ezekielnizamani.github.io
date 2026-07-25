@@ -1,1 +1,115 @@
 
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropelTech Solutions — Clean Real Estate Data</title>
+    <!-- Google Fonts: Inter & Instrument Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#0a0a0c',
+                        foreground: '#f3f3f3',
+                        muted: '#8e8e93',
+                        gold: '#d4af37',
+                        border: '#222226',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['"Instrument Serif"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #f3f3f3;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::selection {
+            background: #d4af37;
+            color: #000000;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between px-6 py-12 md:py-20 max-w-2xl mx-auto">
+
+    <!-- Minimal Header -->
+    <header class="flex justify-between items-center pb-16 border-b border-border">
+        <span class="font-semibold tracking-wide text-sm uppercase">PropelTech Solutions</span>
+        <span class="text-xs text-muted">Bespoke Data Operations</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="my-auto py-12">
+        
+        <h1 class="text-4xl md:text-6xl font-serif font-normal tracking-tight leading-[1.15] mb-8">
+            Clean real estate data. Verified by hand before your team dials.
+        </h1>
+        
+        <div class="space-y-6 text-base md:text-lg text-muted font-normal leading-relaxed">
+            <p>
+                Real estate teams waste thousands of dollars a month dialing disconnected numbers, duplicate leads, and property owners who sold years ago. Automated algorithms constantly miss the decay.
+            </p>
+            <p>
+                PropelTech Solutions acts as a dedicated data hygiene partner for high-performing real estate teams. Whether you are leading a large acquisitions floor or running a lean, direct operation, we combine custom backend deduplication with thorough, local verification tailored to your target markets.
+            </p>
+            <p>
+                No software to install. No learning curve. You send us your raw property lists from any sourcing provider, and our team manually deduplicates, scrubs, and cross-references them against active ownership records. You get a pristine, dial-ready file back in 24 to 48 hours.
+            </p>
+        </div>
+
+        <!-- Clean Bullet List -->
+        <div class="my-10 py-8 border-y border-border space-y-3 text-sm md:text-base">
+            <div class="flex items-start gap-3">
+                <span class="text-gold font-bold">✓</span>
+                <span><strong class="text-foreground font-medium">Zero dialer burn:</strong> Stop wasting calling hours and ad spend on dead contact info.</span>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-gold font-bold">✓</span>
+                <span><strong class="text-foreground font-medium">Active ownership checks:</strong> Every property record is verified against current ownership data.</span>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-gold font-bold">✓</span>
+                <span><strong class="text-foreground font-medium">CRM deduplication:</strong> We format and merge clean records directly into your existing pipelines.</span>
+            </div>
+        </div>
+
+        <!-- Call to Action Area -->
+        <div class="pt-2 flex flex-col sm:flex-row sm:items-center gap-4">
+            <!-- Replace the href below with your actual Calendly URL -->
+            <a href="https://calendly.com/ezekielnizamani0/30min" target="_blank" rel="noopener noreferrer" class="inline-block text-center bg-foreground text-background font-medium text-sm px-6 py-3.5 rounded-md hover:bg-gold transition-colors duration-150">
+                Book a 15-Minute Discovery Call
+            </a>
+            
+            <!--<div class="text-xs text-muted">-->
+            <!--    <span>Or email directly at </span>-->
+                <!-- Replace with your actual business email -->
+            <!--    <a href="mailto:contact@propeltechsolutions.com?subject=Data%20Hygiene%20Discovery%20Call" class="text-foreground underline hover:text-gold transition-colors">-->
+            <!--        hizqeel@propeltechsolutions.com-->
+            <!--    </a>-->
+            <!--</div>-->
+        </div>
+
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="pt-16 border-t border-border flex flex-col sm:flex-row justify-between text-xs text-muted gap-2">
+        <span>&copy; PropelTech Solutions. All rights reserved.</span>
+        <span>US Real Estate Operations</span>
+    </footer>
+
+</body>
+</html>
