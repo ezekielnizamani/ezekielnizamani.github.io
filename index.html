@@ -75,7 +75,7 @@
             <a href="#" class="flex items-center gap-3 group">
                 <!-- COMPANY LOGO PLACEHOLDER -->
                 <!-- Upload your logo as 'logo.png' or 'logo.svg' to your root folder. If missing, it hides gracefully and displays the text brand. -->
-                <img src="logo.png" alt="PropelTech Solution Logo" class="h-7 w-auto object-contain transition-opacity group-hover:opacity-90" onerror="this.style.display='none'">
+                <!-- <img src="logo.png" alt="PropelTech Solution Logo" class="h-7 w-auto object-contain transition-opacity group-hover:opacity-90" onerror="this.style.display='none'"> -->
                 <span class="text-lg font-semibold tracking-tight text-white flex items-center gap-1.5">
                     PropelTech <span class="text-neutral-500 font-normal">Solution</span>
                 </span>
@@ -113,7 +113,7 @@
                 <a href="#review" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-neutral-950 font-medium hover:bg-neutral-200 transition-all duration-200 text-center">
                     Request 100-Record Free Review
                 </a>
-                <a href="#calendly" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-medium hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200 text-center">
+                <a href="https://calendly.com/ezekielnizamani0/30min" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-medium hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200 text-center">
                     Book Discovery Call
                 </a>
             </div>
@@ -459,7 +459,7 @@
             </div>
         </section>
 
-        <!-- 100 Record Free Review (Interactive Form Upgrade) -->
+        <!-- 100 Record Free Review (GitHub Pages / Static Intake Upgrade) -->
         <section id="review" class="py-24 px-6 border-t border-neutral-900 bg-neutral-950/80">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center max-w-2xl mx-auto mb-12">
@@ -474,53 +474,42 @@
                     </p>
                 </div>
 
-                <!-- Form Container -->
-                <!-- Note: Point the 'action' attribute to your endpoint (e.g., Formspree, Formslib, or custom backend) -->
-                <form action="https://formspree.io/f/placeholder" method="POST" class="p-8 md:p-10 rounded-2xl bg-neutral-900/60 border border-neutral-800/80 max-w-2xl mx-auto space-y-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block text-xs font-medium text-neutral-300 mb-2">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-neutral-600 transition-colors">
+                <!-- Static-Friendly Intake Workflow Card (No Forms / No Backend Required) -->
+                <div class="p-8 md:p-12 rounded-3xl bg-neutral-900/50 border border-neutral-800 max-w-2xl mx-auto">
+                    <h3 class="text-lg font-semibold text-white mb-6">How to submit your sample records:</h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-neutral-950/60 border border-neutral-800/80">
+                            <span class="w-6 h-6 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xs font-semibold shrink-0 mt-0.5">1</span>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Export 100 records from your CRM</h4>
+                                <p class="text-xs text-neutral-400 mt-1 leading-relaxed">Export a CSV or Excel spreadsheet containing sample homeowner names, phone numbers, or property addresses.</p>
+                            </div>
                         </div>
-                        <div>
-                            <label for="email" class="block text-xs font-medium text-neutral-300 mb-2">Work Email</label>
-                            <input type="email" id="email" name="email" required placeholder="jane@realestateteam.com" class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-neutral-600 transition-colors">
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div>
-                            <label for="company" class="block text-xs font-medium text-neutral-300 mb-2">Company / Team Name</label>
-                            <input type="text" id="company" name="company" required placeholder="Apex Acquisitions" class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-neutral-600 transition-colors">
-                        </div>
-                        <div>
-                            <label for="crm" class="block text-xs font-medium text-neutral-300 mb-2">Primary CRM Platform</label>
-                            <select id="crm" name="crm" class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-neutral-300 text-sm focus:outline-none focus:border-neutral-600 transition-colors">
-                                <option value="Follow Up Boss">Follow Up Boss</option>
-                                <option value="Sierra Interactive">Sierra Interactive</option>
-                                <option value="GoHighLevel">GoHighLevel</option>
-                                <option value="Lofty / Chime">Lofty / Chime</option>
-                                <option value="Salesforce">Salesforce</option>
-                                <option value="HubSpot">HubSpot</option>
-                                <option value="Other / Custom">Other / Custom</option>
-                            </select>
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-neutral-950/60 border border-neutral-800/80">
+                            <span class="w-6 h-6 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xs font-semibold shrink-0 mt-0.5">2</span>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Send your file directly to our intake team</h4>
+                                <p class="text-xs text-neutral-400 mt-1 leading-relaxed">Click the button below to generate a pre-formatted email. Attach your CSV file and send—we return the audited file within 24 hours.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div>
-                        <label for="notes" class="block text-xs font-medium text-neutral-300 mb-2">What is your biggest data challenge right now?</label>
-                        <textarea id="notes" name="notes" rows="3" placeholder="e.g., We have 50,000 past leads with outdated phone numbers and addresses..." class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-neutral-600 transition-colors resize-none"></textarea>
+                    <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                        <!-- Pre-formatted mailto trigger with automated subject and body -->
+                        <a href="mailto:hizqeel@propeltechsolution.com?subject=100-Record%20Free%20Review%20Submission&body=Hi%20PropelTech%20Team%2C%0A%0AI%20would%20like%20to%20submit%20100%20sample%20records%20for%20a%20free%20verification%20audit.%20I%20have%20attached%20our%20sample%20CSV%2FExcel%20file%20to%20this%20email.%0A%0APrimary%20CRM%20Platform%3A%20%5BInsert%20CRM%20Name%5D%0AOur%20Primary%20Data%20Challenge%3A%20%5BInsert%20Brief%20Notes%5D%0A%0AThank%20you!" class="w-full sm:w-auto flex-1 py-3.5 px-6 rounded-xl bg-white text-neutral-950 font-semibold hover:bg-neutral-200 transition-all duration-200 text-sm text-center">
+                            Submit Sample File via Email
+                        </a>
+                        <a href="https://calendly.com/ezekielnizamani0/30min" class="w-full sm:w-auto flex-1 py-3.5 px-6 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-semibold hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200 text-sm text-center">
+                            Book 15-Min Intake Call Instead
+                        </a>
                     </div>
 
-                    <div class="pt-2">
-                        <button type="submit" class="w-full py-3.5 rounded-xl bg-white text-neutral-950 font-semibold hover:bg-neutral-200 transition-all duration-200 text-sm">
-                            Request 100-Record Free Review
-                        </button>
-                        <p class="text-[11px] text-neutral-500 text-center mt-4">
-                            We execute mutual NDAs upon request. All data transfers are handled via encrypted, enterprise-grade channels.
-                        </p>
-                    </div>
-                </form>
+                    <p class="text-[11px] text-neutral-500 text-center mt-6">
+                        We execute mutual NDAs upon request. All data transfers are handled via encrypted, enterprise-grade channels.
+                    </p>
+                </div>
+
             </div>
         </section>
 
@@ -553,7 +542,7 @@
                     <div class="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800/80">
                         <h4 class="text-base font-semibold text-white mb-2">How does the 100-record free review work?</h4>
                         <p class="text-sm text-neutral-400 leading-relaxed">
-                            You submit your details via our review request form. We connect via encrypted channels to receive your 100 sample records, run them through our ownership verification, address enrichment, and duplicate detection pipelines, and present you with the cleaned file alongside an audit report showing exactly what data was outdated or missing.
+                            You email us a sample CSV export of 100 contacts or property records. We run them through our ownership verification, address enrichment, and duplicate detection pipelines, then present you with the cleaned file alongside a summary report showing exactly what data was outdated or missing.
                         </p>
                     </div>
                     <!-- FAQ Item 4 -->
@@ -608,7 +597,7 @@
                     <a href="#review" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white text-neutral-950 font-semibold hover:bg-neutral-200 transition-all duration-200">
                         Request 100-Record Review
                     </a>
-                    <a href="#calendly" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-semibold hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200">
+                    <a href="https://calendly.com/ezekielnizamani0/30min" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-semibold hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200">
                         Book Workflow Discovery Call
                     </a>
                 </div>
@@ -622,7 +611,7 @@
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
                 <!-- FOOTER LOGO PLACEHOLDER -->
-                <img src="logo.png" alt="PropelTech Logo" class="h-6 w-auto object-contain opacity-70" onerror="this.style.display='none'">
+                <!-- <img src="logo.png" alt="PropelTech Logo" class="h-6 w-auto object-contain opacity-70" onerror="this.style.display='none'"> -->
                 <div>
                     <span class="font-semibold text-neutral-300 block mb-0.5">PropelTech Solution</span>
                     <span>CRM Data Verification & Automation for Real Estate Teams.</span>
@@ -630,10 +619,10 @@
             </div>
             <div class="flex flex-wrap items-center gap-6">
                 <!-- Links Placeholders -->
-                <a href="#linkedin-personal" class="hover:text-neutral-300 transition-colors">Personal LinkedIn</a>
+                <!-- <a href="#linkedin-personal" class="hover:text-neutral-300 transition-colors">Personal LinkedIn</a>
                 <a href="#linkedin-company" class="hover:text-neutral-300 transition-colors">Company LinkedIn</a>
-                <a href="#calendly" class="hover:text-neutral-300 transition-colors">Calendly</a>
-                <a href="mailto:contact@propeltechsolution.com" class="hover:text-neutral-300 transition-colors">Email</a>
+                <a href="#calendly" class="hover:text-neutral-300 transition-colors">Calendly</a> -->
+                <a href="mailto:hizqeel@propeltechsolution.com" class="hover:text-neutral-300 transition-colors">Email</a>
             </div>
         </div>
         <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-neutral-900/80 text-center md:text-left">
