@@ -1,124 +1,589 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PropelTech Solutions — Bespoke CRM Data Hygiene</title>
-    <!-- Google Fonts: Inter & Instrument Serif -->
+    
+    <!-- SEO & Metadata -->
+    <title>PropelTech Solutions | CRM Data Verification & Automation for Real Estate Teams</title>
+    <meta name="description" content="We build repeatable CRM verification workflows, address enrichment pipelines, and scheduled data maintenance for residential real estate teams, brokerages, and acquisition operations.">
+    <link rel="canonical" href="https://propeltechsolutions.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://propeltechsolutions.com/">
+    <meta property="og:title" content="PropelTech Solutions | Real Estate CRM Data Operations">
+    <meta property="og:description" content="Stop dialing outdated numbers and dead ownership records. We build automated CRM verification workflows for high-volume real estate teams.">
+    <meta property="og:image" content="https://propeltechsolutions.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://propeltechsolutions.com/">
+    <meta property="twitter:title" content="PropelTech Solutions | Real Estate CRM Data Operations">
+    <meta property="twitter:description" content="Stop dialing outdated numbers and dead ownership records. We build automated CRM verification workflows for high-volume real estate teams.">
+    <meta property="twitter:image" content="https://propeltechsolutions.com/og-image.jpg">
+
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
-                    colors: {
-                        background: '#0a0a0c',
-                        foreground: '#f3f3f3',
-                        muted: '#8e8e93',
-                        gold: '#d4af37',
-                        border: '#222226',
-                        subtle: '#141417',
-                    },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        serif: ['"Instrument Serif"', 'serif'],
+                    },
+                    colors: {
+                        neutral: {
+                            850: '#171717',
+                            900: '#0F0F0F',
+                            950: '#070707',
+                        }
                     }
                 }
             }
         }
     </script>
+
+    <!-- Custom Style Overrides for Clean Minimalist UI -->
     <style>
         body {
-            background-color: #0a0a0c;
-            color: #f3f3f3;
-            font-family: 'Inter', sans-serif;
-            -webkit-font-smoothing: antialiased;
+            background-color: #070707;
+            color: #E5E5E5;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
         }
         ::selection {
-            background: #d4af37;
-            color: #000000;
+            background-color: #3B82F6;
+            color: #FFFFFF;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between px-6 py-12 md:py-20 max-w-2xl mx-auto">
+<body class="font-sans antialiased selection:bg-blue-600 selection:text-white">
 
-    <!-- Minimal Header -->
-    <header class="flex justify-between items-center pb-16 border-b border-border">
-        <span class="font-semibold tracking-wide text-sm uppercase">PropelTech Solutions</span>
-        <span class="text-xs text-muted">Private Beta — Q3 2026</span>
-    </header>
-
-    <!-- Main Content -->
-    <main class="my-auto py-12">
-        
-        <!-- Broadened Headline for RevOps, Sales Directors & Brokers -->
-        <h1 class="text-4xl md:text-6xl font-serif font-normal tracking-tight leading-[1.15] mb-8">
-            Stop bleeding sales hours on decayed CRM data.
-        </h1>
-        
-        <div class="space-y-6 text-base md:text-lg text-muted font-normal leading-relaxed">
-            <p>
-                Data-dependent B2B sales organizations, RevOps leaders, and managing brokers waste thousands of dollars a month dialing disconnected numbers, outdated leads, and legacy contacts. Automated enrichment tools rely on stale algorithms and constantly miss the decay.
-            </p>
-            <p>
-                PropelTech Solutions acts as a bespoke backend CRM data hygiene, deduplication, and verification engine. Whether you are a delegator managing an 11–50 person sales floor or a direct operator running a lean 1–10 boutique firm, we cross-reference and verify your records by hand so your team dials accurate, active contacts.
-            </p>
-            <p>
-                No software to install. No integration friction. You send us your raw contact lists, and our team deduplicates, scrubs, and verifies them against active records. You get a pristine, dial-ready file back in 24 to 48 hours.
-            </p>
-        </div>
-
-        <!-- Clean Bullet List -->
-        <div class="my-10 py-8 border-y border-border space-y-3 text-sm md:text-base">
-            <div class="flex items-start gap-3">
-                <span class="text-gold font-bold">✓</span>
-                <span><strong class="text-foreground font-medium">Stop the financial bleed:</strong> Eliminate wasted rep hours and lost ad spend on dead contact info.</span>
-            </div>
-            <div class="flex items-start gap-3">
-                <span class="text-gold font-bold">✓</span>
-                <span><strong class="text-foreground font-medium">Bespoke deduplication:</strong> We clean and merge redundant records directly into your existing pipelines.</span>
-            </div>
-            <div class="flex items-start gap-3">
-                <span class="text-gold font-bold">✓</span>
-                <span><strong class="text-foreground font-medium">Built for modern RevOps:</strong> Tailored for Sales Directors, acquisitions floors, and managing brokers who demand dialing accuracy.</span>
-            </div>
-        </div>
-
-        <!-- The 100-Record Micro-Audit Offer Section -->
-        <div class="p-6 rounded-lg bg-subtle border border-border mb-10">
-            <span class="text-xs font-semibold uppercase tracking-wider text-gold block mb-2">The Offer</span>
-            <h3 class="text-lg font-medium text-foreground mb-2">Try the 100-Record Micro-Audit</h3>
-            <p class="text-sm text-muted leading-relaxed">
-                Submit a risk-free sample of just <strong class="text-foreground font-medium">100 CRM records</strong>. Our team will run a manual backend verification and return a clean file alongside a detailed diagnostic showing your exact percentage of data decay—zero upfront cost or obligation.
-            </p>
-        </div>
-
-        <!-- Call to Action Area -->
-        <div class="pt-2 flex flex-col sm:flex-row sm:items-center gap-4">
-            <!-- Mailto trigger pre-filled for the 100-Record Micro-Audit -->
-            <a href="mailto:hizqeel@propeltechsolution.com?subject=100-Record%20Micro-Audit%20Request" class="inline-block text-center bg-foreground text-background font-medium text-sm px-6 py-3.5 rounded-md hover:bg-gold transition-colors duration-150">
-                Request Your 100-Record Micro-Audit
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-lg font-semibold tracking-tight text-white flex items-center gap-2">
+                PropelTech <span class="text-neutral-500 font-normal">Solutions</span>
             </a>
-            
-            <div class="text-xs text-muted">
-                <span>Or book a call via </span>
-                <!-- Replace with your actual Calendly URL -->
-                <a href="https://calendly.com/ezekielnizamani0/30min" target="_blank" rel="noopener noreferrer" class="text-foreground underline hover:text-gold transition-colors">
-                    15-min discovery link
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
+                <a href="#problem" class="hover:text-white transition-colors">Problem</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+                <a href="#case-study" class="hover:text-white transition-colors">Case Study</a>
+                <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#review" class="text-sm font-medium bg-white text-neutral-950 px-4 py-2 rounded-lg hover:bg-neutral-200 transition-all duration-200">
+                    100-Record Review
                 </a>
             </div>
         </div>
+    </header>
+
+    <main class="pt-16">
+
+        <!-- Hero Section -->
+        <section class="py-24 md:py-36 px-6 max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-800 bg-neutral-900/50 text-xs font-medium text-neutral-300 mb-8">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                CRM Data Operations for Real Estate Teams
+            </div>
+            <h1 class="text-4xl md:text-6xl font-semibold tracking-tight text-white max-w-4xl mx-auto leading-tight md:leading-none mb-6">
+                Real estate CRMs decay every day. <br class="hidden sm:inline">We stop it.
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto font-normal leading-relaxed mb-10">
+                Properties change ownership. Addresses expire. Duplicate contacts accumulate. We build repeatable verification and enrichment workflows so your outbound campaigns hit accurate targets.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#review" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-neutral-950 font-medium hover:bg-neutral-200 transition-all duration-200 text-center">
+                    Request 100-Record Free Review
+                </a>
+                <a href="#calendly" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-medium hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200 text-center">
+                    Book Discovery Call
+                </a>
+            </div>
+            <p class="text-xs text-neutral-500 mt-6">
+                No one-off spreadsheet cleaning. Built for continuous, high-volume database reliability.
+            </p>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problem" class="py-24 px-6 border-t border-neutral-900 bg-neutral-950/50">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">The Data Decay Problem</h2>
+                    <h3 class="text-3xl md:text-4xl font-semibold tracking-tight text-white leading-snug">
+                        Why real estate databases fail over time.
+                    </h3>
+                    <p class="text-neutral-400 mt-4 leading-relaxed">
+                        Real estate databases are living systems that degrade without continuous infrastructure. When acquisition teams and outbound callers dial into stale data, operational efficiency drops immediately.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Problem Card 1 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/60 border border-neutral-800/80">
+                        <h4 class="text-lg font-semibold text-white mb-2">Ownership Churn</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            Properties sell, titles transfer, and homeowners relocate. Calling former owners wastes acquisition hours and damages brand reputation.
+                        </p>
+                    </div>
+                    <!-- Problem Card 2 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/60 border border-neutral-800/80">
+                        <h4 class="text-lg font-semibold text-white mb-2">Address & Contact Decay</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            Phone numbers disconnect and mailing addresses expire. Outbound direct mail and cold calling campaigns lose ROI to dead records.
+                        </p>
+                    </div>
+                    <!-- Problem Card 3 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/60 border border-neutral-800/80">
+                        <h4 class="text-lg font-semibold text-white mb-2">Duplicate Accumulation</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            Multiple lead sources, marketing channels, and API syncs flood your CRM with duplicate, fragmented, and conflicting contact files.
+                        </p>
+                    </div>
+                    <!-- Problem Card 4 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/60 border border-neutral-800/80">
+                        <h4 class="text-lg font-semibold text-white mb-2">Dormant Past Clients</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            Historical lead databases sit untouched because agents no longer trust the accuracy of the underlying contact information.
+                        </p>
+                    </div>
+                    <!-- Problem Card 5 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/60 border border-neutral-800/80">
+                        <h4 class="text-lg font-semibold text-white mb-2">Inefficient Outbound Dialing</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            Sales reps spend more time navigating bad numbers and gatekeepers than having meaningful conversations with verified property owners.
+                        </p>
+                    </div>
+                    <!-- Problem Card 6 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/60 border border-neutral-800/80">
+                        <h4 class="text-lg font-semibold text-white mb-2">Unreliable Reporting</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            When CRM data is inflated with outdated records, pipeline forecasting and conversion metrics become fundamentally inaccurate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Help Section -->
+        <section class="py-24 px-6 border-t border-neutral-900">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">Target Operations</h2>
+                    <h3 class="text-3xl md:text-4xl font-semibold tracking-tight text-white leading-snug">
+                        Engineered for high-volume real estate teams.
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-6 rounded-xl bg-neutral-900/30 border border-neutral-800/50 flex items-start gap-4">
+                        <span class="text-neutral-500 mt-1">01</span>
+                        <div>
+                            <h4 class="text-base font-semibold text-white">Residential Real Estate Teams</h4>
+                            <p class="text-xs text-neutral-400 mt-1 leading-normal">Managing high lead volume and needing accurate data for agent follow-up schedules.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-neutral-900/30 border border-neutral-800/50 flex items-start gap-4">
+                        <span class="text-neutral-500 mt-1">02</span>
+                        <div>
+                            <h4 class="text-base font-semibold text-white">Real Estate Brokerages</h4>
+                            <p class="text-xs text-neutral-400 mt-1 leading-normal">Requiring centralized data governance and hygiene across multiple offices and agent rosters.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-neutral-900/30 border border-neutral-800/50 flex items-start gap-4">
+                        <span class="text-neutral-500 mt-1">03</span>
+                        <div>
+                            <h4 class="text-base font-semibold text-white">Investment Companies</h4>
+                            <p class="text-xs text-neutral-400 mt-1 leading-normal">Relying on rapid, verified ownership data to evaluate off-market acquisition opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-neutral-900/30 border border-neutral-800/50 flex items-start gap-4">
+                        <span class="text-neutral-500 mt-1">04</span>
+                        <div>
+                            <h4 class="text-base font-semibold text-white">Wholesalers</h4>
+                            <p class="text-xs text-neutral-400 mt-1 leading-normal">Dependent on high contact-rates and verified homeowner details for direct outreach.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-neutral-900/30 border border-neutral-800/50 flex items-start gap-4">
+                        <span class="text-neutral-500 mt-1">05</span>
+                        <div>
+                            <h4 class="text-base font-semibold text-white">Acquisition Teams</h4>
+                            <p class="text-xs text-neutral-400 mt-1 leading-normal">Need automated scrubbing before pushing lists to outbound callers and dialers.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-neutral-900/30 border border-neutral-800/50 flex items-start gap-4">
+                        <span class="text-neutral-500 mt-1">06</span>
+                        <div>
+                            <h4 class="text-base font-semibold text-white">Teams with Large CRMs</h4>
+                            <p class="text-xs text-neutral-400 mt-1 leading-normal">Organizations reactivating dormant leads and historical client databases at scale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 px-6 border-t border-neutral-900 bg-neutral-950/50">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">Core Capabilities</h2>
+                    <h3 class="text-3xl md:text-4xl font-semibold tracking-tight text-white leading-snug">
+                        End-to-end CRM data verification & automation.
+                    </h3>
+                    <p class="text-neutral-400 mt-4 leading-relaxed">
+                        We deploy comprehensive data infrastructure designed specifically around the mechanics of real estate transactions and customer relationship management.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Service 1 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/80 border border-neutral-800 flex flex-col justify-between">
+                        <div>
+                            <div class="w-8 h-8 rounded-lg bg-neutral-800/80 flex items-center justify-center mb-4 text-neutral-300">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-base font-semibold text-white mb-2">Property Ownership Verification</h4>
+                            <p class="text-xs text-neutral-400 leading-relaxed">Confirming active title and ownership status before marketing resources are deployed.</p>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/80 border border-neutral-800 flex flex-col justify-between">
+                        <div>
+                            <div class="w-8 h-8 rounded-lg bg-neutral-800/80 flex items-center justify-center mb-4 text-neutral-300">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-base font-semibold text-white mb-2">CRM Data Cleanup</h4>
+                            <p class="text-xs text-neutral-400 leading-relaxed">Standardizing naming conventions, fixing formatting errors, and purging invalid contact records.</p>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/80 border border-neutral-800 flex flex-col justify-between">
+                        <div>
+                            <div class="w-8 h-8 rounded-lg bg-neutral-800/80 flex items-center justify-center mb-4 text-neutral-300">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-base font-semibold text-white mb-2">Address Enrichment</h4>
+                            <p class="text-xs text-neutral-400 leading-relaxed">Appending verified mailing addresses, property characteristics, and missing contact attributes.</p>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/80 border border-neutral-800 flex flex-col justify-between">
+                        <div>
+                            <div class="w-8 h-8 rounded-lg bg-neutral-800/80 flex items-center justify-center mb-4 text-neutral-300">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-base font-semibold text-white mb-2">Duplicate Detection</h4>
+                            <p class="text-xs text-neutral-400 leading-relaxed">Intelligent matching algorithms that merge redundant profiles while preserving communication history.</p>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/80 border border-neutral-800 flex flex-col justify-between">
+                        <div>
+                            <div class="w-8 h-8 rounded-lg bg-neutral-800/80 flex items-center justify-center mb-4 text-neutral-300">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-base font-semibold text-white mb-2">CRM Workflow Automation</h4>
+                            <p class="text-xs text-neutral-400 leading-relaxed">Building custom automated pipelines that trigger data verification routing instantly upon lead entry.</p>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/80 border border-neutral-800 flex flex-col justify-between">
+                        <div>
+                            <div class="w-8 h-8 rounded-lg bg-neutral-800/80 flex items-center justify-center mb-4 text-neutral-300">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-base font-semibold text-white mb-2">Scheduled Health Checks</h4>
+                            <p class="text-xs text-neutral-400 leading-relaxed">Recurring automated maintenance audits designed to catch database decay before it impacts outreach.</p>
+                        </div>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/80 border border-neutral-800 flex flex-col justify-between">
+                        <div>
+                            <div class="w-8 h-8 rounded-lg bg-neutral-800/80 flex items-center justify-center mb-4 text-neutral-300">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-base font-semibold text-white mb-2">CRM Integrations</h4>
+                            <p class="text-xs text-neutral-400 leading-relaxed">Connecting your primary database directly to verification providers and external data enrichment APIs.</p>
+                        </div>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/80 border border-neutral-800 flex flex-col justify-between">
+                        <div>
+                            <div class="w-8 h-8 rounded-lg bg-neutral-800/80 flex items-center justify-center mb-4 text-neutral-300">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-base font-semibold text-white mb-2">Import-Ready Preparation</h4>
+                            <p class="text-xs text-neutral-400 leading-relaxed">Scrubbing and formatting raw outbound lists so they ingest cleanly without breaking existing schemas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works (3 Steps) -->
+        <section id="how-it-works" class="py-24 px-6 border-t border-neutral-900">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">Execution Methodology</h2>
+                    <h3 class="text-3xl md:text-4xl font-semibold tracking-tight text-white leading-snug">
+                        How we maintain your database.
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                    <!-- Step 1 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/40 border border-neutral-800/80 relative">
+                        <div class="text-3xl font-light text-neutral-600 mb-6">01</div>
+                        <h4 class="text-lg font-semibold text-white mb-3">Audit & Schema Analysis</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            We analyze your existing CRM architecture, evaluate historical data decay rates, and map out duplicate accumulation patterns across your current records.
+                        </p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/40 border border-neutral-800/80 relative">
+                        <div class="text-3xl font-light text-neutral-600 mb-6">02</div>
+                        <h4 class="text-lg font-semibold text-white mb-3">Workflow Integration</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            We deploy automated verification pipelines directly into your CRM, enabling instant scrubbing for new leads and establishing manual review protocols where necessary.
+                        </p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="p-8 rounded-2xl bg-neutral-900/40 border border-neutral-800/80 relative">
+                        <div class="text-3xl font-light text-neutral-600 mb-6">03</div>
+                        <h4 class="text-lg font-semibold text-white mb-3">Scheduled Maintenance</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            We initiate recurring, automated health checks—such as 90-day full-database re-verifications—ensuring your records remain reliable permanently.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why PropelTech (Our Differentiator) -->
+        <section class="py-24 px-6 border-t border-neutral-900 bg-neutral-950/50">
+            <div class="max-w-5xl mx-auto">
+                <div class="p-10 md:p-16 rounded-3xl bg-gradient-to-b from-neutral-900/80 to-neutral-900/20 border border-neutral-800">
+                    <div class="max-w-2xl">
+                        <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">Our Differentiator</h2>
+                        <h3 class="text-3xl md:text-4xl font-semibold tracking-tight text-white leading-snug mb-6">
+                            We do not simply clean spreadsheets. <br>We build repeatable CRM workflows.
+                        </h3>
+                        <p class="text-base text-neutral-400 leading-relaxed mb-8">
+                            Most data services take a CSV export, run a basic script, and return a static spreadsheet. Within six months, your CRM is decaying again. PropelTech operates as a long-term CRM Data Operations partner, embedding reliable verification infrastructure directly into your workflows.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-neutral-800/80 pt-8 mt-8">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-sm text-neutral-300">Verifying new CRM records automatically upon entry</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-sm text-neutral-300">Enriching missing property addresses dynamically</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-sm text-neutral-300">Periodic, automated verification of existing records</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-sm text-neutral-300">Seamless CRM integrations and API synchronization</span>
+                        </div>
+                        <div class="flex items-start gap-3 sm:col-span-2">
+                            <svg class="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-sm text-neutral-300">Hybrid architecture combining automated processing with manual human review where appropriate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anonymous Case Study -->
+        <section id="case-study" class="py-24 px-6 border-t border-neutral-900">
+            <div class="max-w-5xl mx-auto">
+                <div class="border border-neutral-800 rounded-3xl p-8 md:p-12 bg-neutral-900/30">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-neutral-800/80 pb-8 mb-8">
+                        <div>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-neutral-500 block mb-1">Operational Case Study</span>
+                            <h3 class="text-2xl md:text-3xl font-semibold text-white tracking-tight">U.S. Real Estate Team</h3>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div>
+                                <span class="text-2xl md:text-3xl font-semibold text-white block">130,000+</span>
+                                <span class="text-xs text-neutral-400 uppercase tracking-wider font-medium">CRM Records Managed</span>
+                            </div>
+                            <div class="h-8 w-px bg-neutral-800"></div>
+                            <div>
+                                <span class="text-2xl md:text-3xl font-semibold text-white block">90 Days</span>
+                                <span class="text-xs text-neutral-400 uppercase tracking-wider font-medium">Verification Cycle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-sm font-semibold uppercase tracking-wider text-neutral-300 mb-3">The Challenge</h4>
+                            <p class="text-sm text-neutral-400 leading-relaxed">
+                                A high-volume U.S. real estate team accumulated over 130,000 contact and property records. Outbound marketing efficiency was steadily declining due to property ownership transfers, missing mailing addresses, and unrecognized duplicate profiles. Agents were wasting hours dialing invalid numbers and sending mailers to former homeowners.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold uppercase tracking-wider text-neutral-300 mb-3">The Architecture & Impact</h4>
+                            <p class="text-sm text-neutral-400 leading-relaxed mb-4">
+                                PropelTech built a custom CRM integration engineered for continuous hygiene. We deployed an automated ingestion workflow that instantly verifies ownership and enriches missing property address information the moment a new record is created.
+                            </p>
+                            <p class="text-sm text-neutral-400 leading-relaxed">
+                                To combat historical decay, we established an automated verification protocol that audits the entire 130,000-record database every three months. This infrastructure stabilized data reliability and significantly improved targeting accuracy for future outreach campaigns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 100 Record Free Review -->
+        <section id="review" class="py-24 px-6 border-t border-neutral-900 bg-neutral-950/80">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-800 bg-neutral-900 text-xs font-medium text-neutral-300 mb-6">
+                    Zero Obligation Audit
+                </div>
+                <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-white mb-6">
+                    Test our verification accuracy on 100 of your own records.
+                </h2>
+                <p class="text-base text-neutral-400 leading-relaxed mb-8 max-w-xl mx-auto">
+                    Export 100 sample records from your CRM. We will run our complete property ownership verification, address enrichment, and duplicate detection workflow and return a clean, audited file—entirely free of charge.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="mailto:contact@propeltechsolutions.com?subject=100%20Record%20Free%20Review%20Request" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white text-neutral-950 font-semibold hover:bg-neutral-200 transition-all duration-200">
+                        Submit 100 Records for Review
+                    </a>
+                    <a href="#calendly" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-semibold hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200">
+                        Ask a Question First
+                    </a>
+                </div>
+                <p class="text-xs text-neutral-500 mt-6">
+                    We execute mutual NDAs upon request. All data transfers are handled via encrypted, enterprise-grade channels.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24 px-6 border-t border-neutral-900">
+            <div class="max-w-4xl mx-auto">
+                <div class="max-w-xl mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">Frequently Asked Questions</h2>
+                    <h3 class="text-3xl font-semibold tracking-tight text-white">
+                        Everything you need to know about our data operations.
+                    </h3>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800/80">
+                        <h4 class="text-base font-semibold text-white mb-2">How is PropelTech different from standard data scrubbing tools?</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            Standard tools provide one-time spreadsheet cleaning. Within months, natural churn causes your data to decay again. We operate as an ongoing operations partner, building automated workflows directly integrated into your CRM that verify new leads in real time and schedule recurring audits to prevent data decay permanently.
+                        </p>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800/80">
+                        <h4 class="text-base font-semibold text-white mb-2">What types of real estate teams do you work with?</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            We work with residential real estate teams, brokerages, wholesalers, investment companies, and acquisition operations—particularly teams managing large CRM databases or looking to reactivate dormant lead lists and past clients.
+                        </p>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800/80">
+                        <h4 class="text-base font-semibold text-white mb-2">How does the 100-record free review work?</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            You provide a CSV export of 100 sample contacts or property records. We run them through our ownership verification, address enrichment, and duplicate detection pipelines, then present you with the cleaned file alongside a summary report showing exactly what data was outdated or missing.
+                        </p>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800/80">
+                        <h4 class="text-base font-semibold text-white mb-2">Do you use automated tools or manual human review?</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            We deploy a hybrid architecture. High-speed programmatic pipelines handle clear-cut data verification and formatting, while complex discrepancies, ownership anomalies, or flagged records are routed to a manual review protocol to ensure absolute accuracy.
+                        </p>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800/80">
+                        <h4 class="text-base font-semibold text-white mb-2">Is our CRM data kept secure and confidential?</h4>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            Yes. We operate under strict data privacy standards, never share or resell client database records, and execute mutual non-disclosure agreements before accessing your CRM systems or sample files.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section -->
+        <section class="py-24 px-6 border-t border-neutral-900 bg-neutral-950/40">
+            <div class="max-w-3xl mx-auto">
+                <div class="p-8 md:p-10 rounded-2xl bg-neutral-900/50 border border-neutral-800 flex flex-col md:flex-row items-start gap-6">
+                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center text-lg font-semibold text-white shrink-0">
+                        HN
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-white">Hizqeel Nizamani</h3>
+                        <span class="text-xs text-neutral-400 block mb-4 font-medium">Founder, PropelTech Solutions</span>
+                        <p class="text-sm text-neutral-300 leading-relaxed mb-4">
+                            PropelTech Solutions helps U.S. real estate teams improve CRM data quality through systematic verification, custom automation, and dependable workflow design.
+                        </p>
+                        <p class="text-xs text-neutral-400 leading-relaxed">
+                            We focus strictly on eliminating the operational drag caused by decaying records, ensuring acquisition teams and outbound marketers always work from accurate, reliable property data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="py-24 md:py-32 px-6 border-t border-neutral-900 text-center relative overflow-hidden">
+            <div class="max-w-4xl mx-auto relative z-10">
+                <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-white mb-6">
+                    Stop losing outbound revenue to decaying CRM data.
+                </h2>
+                <p class="text-base md:text-lg text-neutral-400 max-w-xl mx-auto font-normal leading-relaxed mb-10">
+                    Whether you need to reactivate 100,000 past clients or automate verification for daily inbound leads, we are ready to build your data infrastructure.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#review" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white text-neutral-950 font-semibold hover:bg-neutral-200 transition-all duration-200">
+                        Request 100-Record Review
+                    </a>
+                    <a href="#calendly" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-semibold hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200">
+                        Book Workflow Discovery Call
+                    </a>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Minimal Footer -->
-    <footer class="pt-16 border-t border-border flex flex-col sm:flex-row justify-between text-xs text-muted gap-2">
-        <span>&copy; PropelTech Solutions. All rights reserved.</span>
-        <span>US B2B & Real Estate Operations</span>
+    <!-- Footer -->
+    <footer class="border-t border-neutral-900 bg-neutral-950 py-12 px-6 text-xs text-neutral-500">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="font-semibold text-neutral-300 block mb-1">PropelTech Solutions</span>
+                <span>CRM Data Verification & Automation for Real Estate Teams.</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-6">
+                <!-- Links Placeholders -->
+
+                <a href="mailto:contact@propeltechsolutions.com" class="hover:text-neutral-300 transition-colors">Email</a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-neutral-900/80 text-center md:text-left">
+            <p>&copy; 2026 PropelTech Solutions. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
