@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO & Metadata -->
-    <title>PropelTech Solutions | CRM Data Verification & Automation for Real Estate Teams</title>
+    <title>PropelTech Solution | CRM Data Verification & Automation for Real Estate Teams</title>
     <meta name="description" content="We build repeatable CRM verification workflows, address enrichment pipelines, and scheduled data maintenance for residential real estate teams, brokerages, and acquisition operations.">
-    <link rel="canonical" href="https://propeltechsolutions.com/">
+    <link rel="canonical" href="https://propeltechsolution.com/">
+    
+    <!-- FAVICON CONFIGURATION -->
+    <!-- Replace 'favicon.ico' and 'apple-touch-icon.png' with your actual file paths once uploaded -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://propeltechsolutions.com/">
-    <meta property="og:title" content="PropelTech Solutions | Real Estate CRM Data Operations">
+    <meta property="og:url" content="https://propeltechsolution.com/">
+    <meta property="og:title" content="PropelTech Solution | Real Estate CRM Data Operations">
     <meta property="og:description" content="Stop dialing outdated numbers and dead ownership records. We build automated CRM verification workflows for high-volume real estate teams.">
-    <meta property="og:image" content="https://propeltechsolutions.com/og-image.jpg">
+    <meta property="og:image" content="https://propeltechsolution.com/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://propeltechsolutions.com/">
-    <meta property="twitter:title" content="PropelTech Solutions | Real Estate CRM Data Operations">
+    <meta property="twitter:url" content="https://propeltechsolution.com/">
+    <meta property="twitter:title" content="PropelTech Solution | Real Estate CRM Data Operations">
     <meta property="twitter:description" content="Stop dialing outdated numbers and dead ownership records. We build automated CRM verification workflows for high-volume real estate teams.">
-    <meta property="twitter:image" content="https://propeltechsolutions.com/og-image.jpg">
+    <meta property="twitter:image" content="https://propeltechsolution.com/og-image.jpg">
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,8 +72,13 @@
     <!-- Header / Navigation -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800/80">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-lg font-semibold tracking-tight text-white flex items-center gap-2">
-                PropelTech <span class="text-neutral-500 font-normal">Solutions</span>
+            <a href="#" class="flex items-center gap-3 group">
+                <!-- COMPANY LOGO PLACEHOLDER -->
+                <!-- Upload your logo as 'logo.png' or 'logo.svg' to your root folder. If missing, it hides gracefully and displays the text brand. -->
+                <img src="logo.png" alt="PropelTech Solution Logo" class="h-7 w-auto object-contain transition-opacity group-hover:opacity-90" onerror="this.style.display='none'">
+                <span class="text-lg font-semibold tracking-tight text-white flex items-center gap-1.5">
+                    PropelTech <span class="text-neutral-500 font-normal">Solution</span>
+                </span>
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
                 <a href="#problem" class="hover:text-white transition-colors">Problem</a>
@@ -449,29 +459,68 @@
             </div>
         </section>
 
-        <!-- 100 Record Free Review -->
+        <!-- 100 Record Free Review (Interactive Form Upgrade) -->
         <section id="review" class="py-24 px-6 border-t border-neutral-900 bg-neutral-950/80">
-            <div class="max-w-3xl mx-auto text-center">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-800 bg-neutral-900 text-xs font-medium text-neutral-300 mb-6">
-                    Zero Obligation Audit
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-800 bg-neutral-900 text-xs font-medium text-neutral-300 mb-6">
+                        Zero Obligation Audit
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-white mb-4">
+                        Test our accuracy on 100 of your own records.
+                    </h2>
+                    <p class="text-base text-neutral-400 leading-relaxed">
+                        Export 100 sample records from your CRM. We run our complete ownership verification, address enrichment, and duplicate detection workflow and return a clean, audited file—entirely free of charge.
+                    </p>
                 </div>
-                <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-white mb-6">
-                    Test our verification accuracy on 100 of your own records.
-                </h2>
-                <p class="text-base text-neutral-400 leading-relaxed mb-8 max-w-xl mx-auto">
-                    Export 100 sample records from your CRM. We will run our complete property ownership verification, address enrichment, and duplicate detection workflow and return a clean, audited file—entirely free of charge.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="mailto:contact@propeltechsolutions.com?subject=100%20Record%20Free%20Review%20Request" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white text-neutral-950 font-semibold hover:bg-neutral-200 transition-all duration-200">
-                        Submit 100 Records for Review
-                    </a>
-                    <a href="#calendly" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-neutral-900 border border-neutral-800 text-white font-semibold hover:bg-neutral-850 hover:border-neutral-700 transition-all duration-200">
-                        Ask a Question First
-                    </a>
-                </div>
-                <p class="text-xs text-neutral-500 mt-6">
-                    We execute mutual NDAs upon request. All data transfers are handled via encrypted, enterprise-grade channels.
-                </p>
+
+                <!-- Form Container -->
+                <!-- Note: Point the 'action' attribute to your endpoint (e.g., Formspree, Formslib, or custom backend) -->
+                <form action="https://formspree.io/f/placeholder" method="POST" class="p-8 md:p-10 rounded-2xl bg-neutral-900/60 border border-neutral-800/80 max-w-2xl mx-auto space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-xs font-medium text-neutral-300 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-neutral-600 transition-colors">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-xs font-medium text-neutral-300 mb-2">Work Email</label>
+                            <input type="email" id="email" name="email" required placeholder="jane@realestateteam.com" class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-neutral-600 transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="company" class="block text-xs font-medium text-neutral-300 mb-2">Company / Team Name</label>
+                            <input type="text" id="company" name="company" required placeholder="Apex Acquisitions" class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-neutral-600 transition-colors">
+                        </div>
+                        <div>
+                            <label for="crm" class="block text-xs font-medium text-neutral-300 mb-2">Primary CRM Platform</label>
+                            <select id="crm" name="crm" class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-neutral-300 text-sm focus:outline-none focus:border-neutral-600 transition-colors">
+                                <option value="Follow Up Boss">Follow Up Boss</option>
+                                <option value="Sierra Interactive">Sierra Interactive</option>
+                                <option value="GoHighLevel">GoHighLevel</option>
+                                <option value="Lofty / Chime">Lofty / Chime</option>
+                                <option value="Salesforce">Salesforce</option>
+                                <option value="HubSpot">HubSpot</option>
+                                <option value="Other / Custom">Other / Custom</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="notes" class="block text-xs font-medium text-neutral-300 mb-2">What is your biggest data challenge right now?</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="e.g., We have 50,000 past leads with outdated phone numbers and addresses..." class="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-neutral-600 transition-colors resize-none"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-white text-neutral-950 font-semibold hover:bg-neutral-200 transition-all duration-200 text-sm">
+                            Request 100-Record Free Review
+                        </button>
+                        <p class="text-[11px] text-neutral-500 text-center mt-4">
+                            We execute mutual NDAs upon request. All data transfers are handled via encrypted, enterprise-grade channels.
+                        </p>
+                    </div>
+                </form>
             </div>
         </section>
 
@@ -504,7 +553,7 @@
                     <div class="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800/80">
                         <h4 class="text-base font-semibold text-white mb-2">How does the 100-record free review work?</h4>
                         <p class="text-sm text-neutral-400 leading-relaxed">
-                            You provide a CSV export of 100 sample contacts or property records. We run them through our ownership verification, address enrichment, and duplicate detection pipelines, then present you with the cleaned file alongside a summary report showing exactly what data was outdated or missing.
+                            You submit your details via our review request form. We connect via encrypted channels to receive your 100 sample records, run them through our ownership verification, address enrichment, and duplicate detection pipelines, and present you with the cleaned file alongside an audit report showing exactly what data was outdated or missing.
                         </p>
                     </div>
                     <!-- FAQ Item 4 -->
@@ -534,9 +583,9 @@
                     </div>
                     <div>
                         <h3 class="text-base font-semibold text-white">Hizqeel Nizamani</h3>
-                        <span class="text-xs text-neutral-400 block mb-4 font-medium">Founder, PropelTech Solutions</span>
+                        <span class="text-xs text-neutral-400 block mb-4 font-medium">Founder, PropelTech Solution</span>
                         <p class="text-sm text-neutral-300 leading-relaxed mb-4">
-                            PropelTech Solutions helps U.S. real estate teams improve CRM data quality through systematic verification, custom automation, and dependable workflow design.
+                            PropelTech Solution helps U.S. real estate teams improve CRM data quality through systematic verification, custom automation, and dependable workflow design.
                         </p>
                         <p class="text-xs text-neutral-400 leading-relaxed">
                             We focus strictly on eliminating the operational drag caused by decaying records, ensuring acquisition teams and outbound marketers always work from accurate, reliable property data.
@@ -571,18 +620,24 @@
     <!-- Footer -->
     <footer class="border-t border-neutral-900 bg-neutral-950 py-12 px-6 text-xs text-neutral-500">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <span class="font-semibold text-neutral-300 block mb-1">PropelTech Solutions</span>
-                <span>CRM Data Verification & Automation for Real Estate Teams.</span>
+            <div class="flex items-center gap-3">
+                <!-- FOOTER LOGO PLACEHOLDER -->
+                <img src="logo.png" alt="PropelTech Logo" class="h-6 w-auto object-contain opacity-70" onerror="this.style.display='none'">
+                <div>
+                    <span class="font-semibold text-neutral-300 block mb-0.5">PropelTech Solution</span>
+                    <span>CRM Data Verification & Automation for Real Estate Teams.</span>
+                </div>
             </div>
             <div class="flex flex-wrap items-center gap-6">
                 <!-- Links Placeholders -->
-
-                <a href="mailto:contact@propeltechsolutions.com" class="hover:text-neutral-300 transition-colors">Email</a>
+                <a href="#linkedin-personal" class="hover:text-neutral-300 transition-colors">Personal LinkedIn</a>
+                <a href="#linkedin-company" class="hover:text-neutral-300 transition-colors">Company LinkedIn</a>
+                <a href="#calendly" class="hover:text-neutral-300 transition-colors">Calendly</a>
+                <a href="mailto:contact@propeltechsolution.com" class="hover:text-neutral-300 transition-colors">Email</a>
             </div>
         </div>
         <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-neutral-900/80 text-center md:text-left">
-            <p>&copy; 2026 PropelTech Solutions. All rights reserved.</p>
+            <p>&copy; 2026 PropelTech Solution. All rights reserved.</p>
         </div>
     </footer>
 
