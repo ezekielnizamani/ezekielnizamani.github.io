@@ -659,7 +659,7 @@
         </div>
     </footer>
 
-    <!-- Mobile Navigation Script -->
+  <!-- Mobile Navigation Script -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -669,9 +669,16 @@
 
         if (menuBtn && mobileMenu) {
             menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                openIcon.classList.toggle('hidden');
-                closeIcon.classList.toggle('hidden');
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    openIcon.classList.add('hidden');
+                    closeIcon.classList.remove('hidden');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    openIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
             });
 
             mobileLinks.forEach(link => {
